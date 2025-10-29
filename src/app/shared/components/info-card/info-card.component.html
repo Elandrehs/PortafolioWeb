@@ -1,0 +1,16 @@
+<article class="info-card">
+    <header *ngIf="showHeader" class="card-header">
+        <h2 class="card-title">{{ title }}</h2>
+    </header>
+
+    <section class="card-body">
+        <div *ngIf="showBodyTop" class="body-top">
+            <h3 class="subtitle">{{ subtitle }}</h3>
+
+            <time class="date">{{ date }}</time>
+        </div>
+
+        <p class="description">{{ description }}</p>
+    </section>
+    <ng-content></ng-content>
+</article>
