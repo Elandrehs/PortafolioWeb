@@ -1,0 +1,10 @@
+.skill-tag{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4em;
+    padding-inline: 0.6em;
+    padding-block: 0.2em;
+    gap: 0.1em;
+    background-color: darkgray;
+}
