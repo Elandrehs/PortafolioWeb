@@ -3,6 +3,7 @@ import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-info-card',
+  standalone: true,
   imports: [NgIf],
   templateUrl: './info-card.component.html',
   styleUrl: './info-card.component.css'
