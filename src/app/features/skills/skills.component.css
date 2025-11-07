@@ -1,4 +1,5 @@
 .skill-tags-wrapper{
     display: flex;
+    flex-wrap: wrap;
     gap: 0.7em;
 }

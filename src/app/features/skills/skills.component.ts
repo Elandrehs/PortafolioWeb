@@ -27,6 +27,10 @@ export class SkillsComponent {
       name: 'TypeScript',
       icon: '/assets/icons/typescript.svg'
     },
+    {
+      name: 'JavaScript',
+      icon: '/assets/icons/javascript.svg'
+    },
       {
       name: 'MySQL',
       icon: '/assets/icons/mysql.svg'
