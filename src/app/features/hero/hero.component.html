@@ -1,0 +1,33 @@
+<header class="hero-container">
+    <div class="profile-container">
+
+        <div class="hero-header">
+            <h1 class="hero-title">Victor Cruz Ibarra</h1>
+        </div>
+
+        <div class="hero-body">
+            <h2 class="hero-subtitle">Full Stack Developer en formación</h2>
+
+            <p class="description">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path> </svg>
+                </span>
+                Lima, Perú
+            </p>
+        </div>
+
+        <ul class="social-buttons-wrapper">
+            <li *ngFor="let social of socials">
+                <app-social-button 
+                    [href]="social.link"
+                    [source]="social.icon">
+                </app-social-button>
+            </li>
+        </ul>
+
+    </div>
+
+    <figure class="photo-container">
+        <img class="photo" src="/assets/imgs/victor_formal.png" alt="Foto de Victor Cruz Ibarra">
+    </figure>
+</header>

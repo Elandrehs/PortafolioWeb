@@ -1,0 +1,11 @@
+<app-info-card
+[showHeader]="true"
+title="Habilidades"
+>
+    <div class="skill-tags-wrapper">
+        <app-skill-tag *ngFor="let skill of skills">
+            <img [src]="skill.icon" [alt]="skill.name">
+            {{ skill.name }}
+        </app-skill-tag>
+    </div>
+</app-info-card>

@@ -1,0 +1,6 @@
+.projects-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+}
