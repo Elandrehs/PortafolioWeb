@@ -2,58 +2,44 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
 
-## Development server
+## 🌐 Portafolio Personal – Angular Single Page Application
+Este proyecto es una **Single Page Application (SPA)** desarrollada con **Angular**, creada para presentar mi portafolio profesional.  
+El objetivo es mantener una arquitectura limpia, modular y escalable para facilitar la evolución del proyecto a futuro.
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🧱 Estructura de Carpetas
+La organización actual del proyecto sigue una arquitectura por responsabilidades:
 
 ```bash
-ng generate component component-name
+src/
+├── app/
+│   ├── core/           # Lógica central (servicios, switchers de tema e idioma)
+│   ├── layout/         # Componentes de estructura principal (header, footer, navegación)
+│   ├── shared/         # Componentes reutilizables (botones, inputs, cards, etc.)
+│   ├── features/       # Secciones principales del portafolio
+│   │   ├── hero/
+│   │   ├── about/
+│   │   ├── skills/
+│   │   ├── projects/
+│   │   └── education/
+│   └── app.component.* # Componente principal (será movido a layout)
+│
+├── styles/             # Variables globales, mixins y configuración de temas (modo claro/oscuro)
+└── assets/             # Imágenes, íconos y otros recursos estáticos
+
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧩 Ramas Activas
 
-```bash
-ng generate --help
-```
+El flujo de trabajo sigue una estructura limpia basada en **Git Flow**:
 
-## Building
+- `main` → Rama principal (versión estable)
+- `develop` → Rama de desarrollo (integración de nuevas funciones)
+- `feature/readme` → Actualización progresiva del README
+- `feature/layout` → Creación de estructura base de la aplicación
+- `feature/shared` → Componentes reutilizables
+- `feature/features` → Secciones principales del portafolio
+- `feature/styles` → Sistema de estilos globales
+- `feature/core` → Switchers y configuraciones base
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🧠 *Este README se actualizará conforme avance el desarrollo del proyecto.*
