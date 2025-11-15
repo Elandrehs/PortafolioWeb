@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-social-button',
@@ -7,4 +7,6 @@ import { Component} from '@angular/core';
   styleUrl: './social-button.component.css'
 })
 export class SocialButtonComponent {
+    @Input() href: string = '';
+    @Input() source: string = '';
 }
